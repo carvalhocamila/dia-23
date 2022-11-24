@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>numerosPrimos</title>
+</head>
+    
+<body>
+        <h2>Exercício 1</h2>
+    <script>
+       
+                
+            function numerosPrimos(i) {
+            for (var divisor = 2; divisor < i; divisor++) 
+            if (i % divisor == 0) return false;
+            return true;
+        }
+        
+        for (var i = 2; i < 100; i++) if (numerosPrimos(i)) document.write(i + '\n');
+    </script>
+           
+</body>
+</html>
